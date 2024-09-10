@@ -1,36 +1,108 @@
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anasayfa</title>
-    <link rel="stylesheet" href="index.css">
-    
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <ul>
-            <li><a href="hakkimda.html">Hakkımda</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-            <li><a href="calismalarim.html">Çalışmalarım</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="portfoy">
-      <h1>
-        Merhaba ben Buse Savaş <br />
-        Portöy Siteme hoşgeldiniz!!
-      </h1>
-      <p>
-        Acun Medya Akademi Temel Frontend Kursu boyunca yaptığım projeleri
-        paylaştığım bu portföyü kurs boyu geliştireceğim.
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/page.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Buse Savaş</h3>
+    <ul class="social-media-links">
+      <li><a href="https://github.com/buseesavas" target="_blank"><img src="assets/images/icon-github.svg" alt="Github icon"></a></li>
+      <li><a href="https://www.linkedin.com/in/busesava%C5%9F/" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="Linkedin icon"></a></li>
+    </ul>
     </div>
-
-    <br />
-
-    <br />
-  </body>
+    
+    <div class="about-me">
+      <img src="assets/images/buse-foto.png" alt="Buse Savaş Fotoğraf" class="avatar">
+      <div class="about-me-text">
+        <h1>Merhaba!</br> Ben <span>Buse Savaş.</span> </h1>
+    <h5>Kendimi geliştirmeye istekli, tüm zamanımı bilgisayar başında geçiren, yeni mezun bir bilgisayar mühendisiyim. JavaScript kütüphaneleri olan Next.js ve React ile responsive tasarımlar oluşturmayı öğreniyorum. Yeni şeyler öğrenmek beni mutlu ediyor.</h5>
+      </div> 
+    </div>
+    <!-- <div class="skills">
+      <h2>HTML </br> <span>3 yıl</span> </h2>
+      <h2>CSS </br> <span>3 yıl</span> </h2>
+      <h2>JAVASCRİPT </br> <span>2 yıl</span> </h2>
+      <h2>JAVASCRİPT </br> <span>2 yıl</span> </h2>
+      <h2>REACT </br> <span>1 yıl</span> </h2>
+      <h2>TAİLWİND CSS </br> <span>1 yıl</span> </h2>
+    </div> -->
+    <div class="projects">
+        <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="assets/images/blog-page.png" alt="">
+          <h3>Blog Page </br> <span>HTML CSS</span> </h3>
+          <div class="card-btns">
+            <a href="https://blog-page-lemon.vercel.app/">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/blog-page">KODLARA BAK</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/faq-accordion.png" alt="">
+          <h3>Faq Accordion </br> <span>HTML CSS</span> </h3>
+          <div class="card-btns">
+            <a href="https://faq-accordion-beta-five.vercel.app/">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/faq-accordion">KODLARA BAK</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/food-page.png" alt="">
+          <h3>Food Page</br> <span>HTML CSS</span> </h3>
+          <div class="card-btns">
+            <a href="https://food-page-jade.vercel.app/">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/food-page">KODLARA BAK</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/portfolio.png" alt="">
+          <h3>Portfolio</br> <span>HTML CSS</span> </h3>
+          <div class="card-btns">
+            <a href="https://example-portfolio-eight.vercel.app/">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/example-portfolio">KODLARA BAK</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/recipe-page.png" alt="">
+          <h3>Recipe Page </br> <span>HTML CSS</span> </h3>
+          <div class="card-btns">
+            <a href="https://recipe-page-ahlg.vercel.app/">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/recipe-page">KODLARA BAK</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/revenue-page.png" alt="">
+          <h3>Revenue Page</br> <span>HTML CSS</span> </h3>
+          <div class="card-btns">
+            <a href="https://saas-1-zeta.vercel.app/" target="_blank">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/saas-1" target="_blank">KODLARA BAK</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/yazi-tura-oyunu.png" alt="">
+          <h3>Yazı Tura Oyunu</br> <span>HTML CSS JAVASCRİPT</span> </h3>
+          <div class="card-btns">
+            <a href="https://yazi-tura-oyunu.vercel.app/" target="_blank">PROJEYİ GÖRÜNTÜLE</a>
+            <a href="https://github.com/buseesavas/yazi-tura-oyunu" target="_blank">KODLARA BAK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>Buse Savaş</h3>
+    <ul class="social-media-links">
+      <li><a href="#"><img src="assets/images/icon-github.svg" alt="Github icon"></a></li>
+      <li><a href="#"><img src="assets/images/icon-linkedin.svg" alt="Linkedin icon"></a></li>
+    </ul>
+  </div>
+</body>
 </html>

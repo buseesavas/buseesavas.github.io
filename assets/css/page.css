@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #242424;
+  color: white;
+  font-family: "Space Grote", sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding-inline: 20px;
+  padding-top: 20px;
+  background-image: url("../images/pattern-rings.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  left: 150px;
+  border-bottom: 1px solid #979797;
+  margin-inline: auto;
+}
+
+h3 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+h3 span {
+  color: #d9d9d9;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+h1 span {
+  border-bottom: 4px solid #4ee1a0;
+  border-radius: 3px;
+}
+
+.social-media-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-media-links li a {
+  padding: 10px;
+}
+
+.avatar {
+  width: 170px;
+  justify-content: center;
+}
+
+h5 {
+  font-size: 18px;
+  color: #d9d9d9;
+  font-weight: 300;
+  margin-block: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 100px;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+h2 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.projects {
+  margin-top: 100px;
+  gap: 0px;
+}
+
+.projects div a {
+  font-size: 16px;
+  padding-bottom: 7px;
+}
+
+.projects div {
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.card {
+  -webkit-box-shadow: 10px 10px 58px -6px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 10px 10px 58px -6px rgba(255, 255, 255, 0.25);
+  box-shadow: 10px 10px 58px -6px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding-inline: 15px;
+  padding-block: 30px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.card img {
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card span {
+  padding-bottom: 10px;
+}
+
+.card-btns {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.card-btns a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 4px solid #4ee1a0;
+  border-radius: 3px;
+}
+
+h3 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    text-align: start;
+    padding-inline: 32px;
+    margin-inline: auto;
+  }
+
+  .header,
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+   
+  }
+
+  .footer {
+    padding-inline: 32px;
+    margin-inline: auto;
+  }
+  .social-media-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .social-media-links li a {
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 322px;
+    height: auto;
+  }
+
+  .about-me {
+    display: flex;
+    padding-block: 30px;
+  }
+
+  .about-me-text {
+    margin-left: 30px;
+  }
+
+  h5 {
+    margin-bottom: 0px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 300px;
+  }
+
+  h2 span {
+    font-size: 30px;
+    font-weight: 300;
+    color: #d9d9d9;
+  }
+
+  .projects {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    text-align: start;
+    padding-inline: 165px;
+    margin-inline: auto;
+  }
+
+  .footer {
+    padding-inline: 165px;
+    margin-inline: auto;
+  }
+
+  .avatar {
+    width: 445px;
+    height: auto;
+  }
+}
